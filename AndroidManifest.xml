@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.redhat.osas.hebrew.calendar.widget" android:versionCode="1" android:versionName="1.0-SNAPSHOT">
+
+    <application android:icon="@drawable/icon" android:label="Hebrew Calendar">
+        <receiver android:name=".CalendarWidget" android:label="HebrewCalendar">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/calendar_widget_provider" />
+        </receiver>
+    </application>
+</manifest>
+
